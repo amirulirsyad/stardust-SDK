@@ -8,6 +8,10 @@ This repo is an example on how to use the Stardust SDK for Mapping/Relocation. F
 - Unity ARKit plugin 4.0.8 (Unity package)
 - Unity ARCore XR plugin 4.0.8 (Unity package)
 
+# Supported devices
+- All IPhones compatible with ARKit
+- All Android phones compatible with ARCore ([list of compatible phones](https://developers.google.com/ar/discover/supported-devices))
+
 
 # Issues
 In case of problems, please submit a [new issue](https://github.com/Neogoma/stardust/issues) after checking that your issue was not already reported.
