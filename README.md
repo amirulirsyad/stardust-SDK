@@ -74,4 +74,4 @@ If you need to use standard listener system you don't need to implement **IInter
 Free users are allowed 10 maps and 400 pictures per map.
 
 ## Upload your own objects
-Refer to the [wiki page](
+Refer to the [wiki page](https://github.com/Neogoma/stardust/wiki/Creating-and-uploading-an-asset-bundle-object)
