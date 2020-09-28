@@ -19,7 +19,7 @@ Issues not following template will not be prioritized compared to templates issu
 
 
 # Prerequesite
-The SDK requires you to have a **valid Stardust** account. You can apply for a developer account for free [here](https://pcdev1.neogoma.com/register#/).
+The SDK requires you to have a **valid Stardust** account. You can apply for a developer account for free [here](https://stardust.neogoma.com/).
 Once your developer account is active you can use the SDK.
 
 The SDK relies on the [Hobodream framework](https://github.com/Neogoma/hobodream)
