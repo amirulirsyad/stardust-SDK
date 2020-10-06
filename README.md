@@ -1,5 +1,6 @@
 # Stardust sdk
 This repo is an example on how to use the Stardust SDK for Mapping/Relocation. Feel free to use it as a template for your own projects
+A video showing the SDK capabilities is available on [youtube](https://www.youtube.com/watch?v=_zwqa6DMVCQ&feature=emb_logo)
 
 # Compatibility
 - Unity 2019.4.x or higher
