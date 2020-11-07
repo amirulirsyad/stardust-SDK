@@ -42,7 +42,7 @@ A full video of the process is available [here](https://www.youtube.com/watch?v=
 
 ### Why not just let me upload a FBX or an OBJ file ?
 
-We have in mind that we should allow the creation of interactive objects not only static ones. You can't have interactions scripts on FBX or OBJ unless you write a specific code for it. We want people to be able to create an interactive experience WITHOUT writing any line of code. Examples of what our framework can do can be found [here](ar3a.app). All experiences on this app were done without writing a single line of code by our designer thanks to the framework
+We have in mind that we should allow the creation of interactive objects not only static ones. You can't have interactions scripts on FBX or OBJ unless you write a specific code for it. We want people to be able to create an interactive experience WITHOUT writing any line of code. Examples of what our framework can do can be found [here](https://www.instagram.com/ar3aapp/). All experiences on this app were done without writing a single line of code by our designer thanks to the framework
 
 ### Creating new objects
 
