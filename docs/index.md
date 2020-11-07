@@ -16,9 +16,9 @@ This page will explain you easily how to use the Stardust SDK for mapping and re
 
 5. **Creating your own INTERACTIVE objects and share it! (or not...)**: Our system allows you to upload your own objects to use in the editor or in your apps. The system is compatible with our interaction framework in order to create interactive experiences and not just contemplative ones.
 
-### How can I map ?
+## How can I map ?
 
-## Mapping and update instructions
+### Mapping and update instructions
 
 - Move at a **slow pace** to make sure the captured datas are good quality
 - **Do not make sudden rotations** otherwise the generated map result can have issues
@@ -27,7 +27,7 @@ This page will explain you easily how to use the Stardust SDK for mapping and re
 - Once you launched the map generation, the data processing can take between 30 minutes and 1 hour depending on the number of pictures you provided
 - The compass will be the origin of your map
 
-## Specific update instructions
+### Specific update instructions
 
 
 - You need to start at thhe **SAME POSITION** and **SAME ORIENTATION** before starting the scene (compass should be around the same place as during the mapping)
@@ -42,7 +42,7 @@ A full video of the process is available [here](https://www.youtube.com/watch?v=
 
 ### Why not just let me upload a FBX or an OBJ file ?
 
-We have in mind that we should allow the creation of interactive objects not only static ones. You can't have interactions scripts on FBX or OBJ unless you write a specific code for it. We target the mak
+We have in mind that we should allow the creation of interactive objects not only static ones. You can't have interactions scripts on FBX or OBJ unless you write a specific code for it. We want people to be able to create an interactive experience WITHOUT writing any line of code. Examples of what our framework can do can be found [here](ar3a.app). All experiences on this app were done without writing a single line of code by our designer thanks to the framework
 
 ### Creating new objects
 
@@ -56,7 +56,6 @@ If the video above is not clear you can follow the full [unity tutorial for asse
 - Choose if you want to make your object public or not (every other developer will be able to use it)
 - Select the folders with the files for **each specific platform**. It's **not mandatory** to upload on every platform but if a bundle is not available for a platform a **default error message will be displayed** when trying to download it.
 - If you delete an object, it will be **removed from all the maps**.
-
 
 ## Editor commands
 
