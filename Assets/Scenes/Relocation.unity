@@ -335,7 +335,7 @@ MonoBehaviour:
   m_FocusMode: -1
   m_LightEstimationMode: -1
   m_AutoFocus: 1
-  m_LightEstimation: 0
+  m_LightEstimation: -1
   m_FacingDirection: 1
 --- !u!114 &193659733
 MonoBehaviour:
@@ -3777,8 +3777,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HumanSegmentationStencilMode: 1
   m_HumanSegmentationDepthMode: 1
-  m_EnvironmentDepthMode: 1
-  m_OcclusionPreferenceMode: 0
 --- !u!114 &1757889129
 MonoBehaviour:
   m_ObjectHideFlags: 0
