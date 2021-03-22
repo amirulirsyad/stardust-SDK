@@ -832,7 +832,7 @@ MonoBehaviour:
   objsToBeReset: []
   objsToBeToggled: []
   imageAfterClick: {fileID: 0}
-  sceneIndexToLoad: 1
+  sceneIndexToLoad: 0
 --- !u!1001 &239065150
 PrefabInstance:
   m_ObjectHideFlags: 0
