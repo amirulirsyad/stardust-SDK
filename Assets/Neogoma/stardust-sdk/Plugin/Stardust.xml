@@ -19,21 +19,6 @@
             Low quality
             </summary>
         </member>
-        <member name="T:com.Neogoma.Stardust.API.APIAutoLogin">
-            <summary>
-            Monobehavior script used to login the user on startup use this to login on awake automatically
-            </summary>
-        </member>
-        <member name="F:com.Neogoma.Stardust.API.APIAutoLogin.email">
-            <summary>
-            User email
-            </summary>
-        </member>
-        <member name="F:com.Neogoma.Stardust.API.APIAutoLogin.password">
-            <summary>
-            User password
-            </summary>
-        </member>
         <member name="T:com.Neogoma.Stardust.API.AbstractImageDataController">
             <summary>
             Abstract to define a class that is using image and intrisics datas from the camera
@@ -175,18 +160,6 @@
             </summary>
             <returns>byte array of the JPEG data</returns>
         </member>
-        <member name="T:com.Neogoma.Stardust.API.LoginController">
-            <summary>
-            Monobehavior used to log the user in the server
-            </summary>
-        </member>
-        <member name="M:com.Neogoma.Stardust.API.LoginController.Login(System.String,System.String)">
-            <summary>
-            Logs the user into the system
-            </summary>
-            <param name="email">User email</param>
-            <param name="password">User's password</param>
-        </member>
         <member name="T:com.Neogoma.Stardust.API.Mapping.MapDataUploader">
             <summary>
             Class used to send sending mapping datas to server. 
@@ -195,11 +168,6 @@
         <member name="P:com.Neogoma.Stardust.API.Mapping.MapDataUploader.Instance">
             <summary>
             Instance of <see cref="T:com.Neogoma.Stardust.API.Mapping.MapDataUploader"/>
-            </summary>
-        </member>
-        <member name="T:com.Neogoma.Stardust.API.Mapping.MapDataUploader.DataUpdateFrequency">
-            <summary>
-            Designating the frequency
             </summary>
         </member>
         <member name="F:com.Neogoma.Stardust.API.Mapping.MapDataUploader.onDataCapturedSucessfully">
@@ -242,11 +210,6 @@
             If set to true will capture the point data 
             </summary>
         </member>
-        <member name="F:com.Neogoma.Stardust.API.Mapping.MapDataUploader.updateFrequency">
-            <summary>
-            Frequency to send the data
-            </summary>
-        </member>
         <member name="P:com.Neogoma.Stardust.API.Mapping.MapDataUploader.Name">
             <summary>
             Returns the session Name
@@ -273,15 +236,17 @@
             <param name="position">Position of the target in MAP SPACE</param>
             <param name="name">Name of the target</param>
         </member>
-        <member name="M:com.Neogoma.Stardust.API.Mapping.MapDataUploader.GenerateMap">
+        <member name="M:com.Neogoma.Stardust.API.Mapping.MapDataUploader.GenerateMap(System.String)">
             <summary>
             Generates the map
             </summary>
+            <param name="emailToNotify">Email to notify when map is ready</param>
         </member>
-        <member name="M:com.Neogoma.Stardust.API.Mapping.MapDataUploader.UpdateMap">
+        <member name="M:com.Neogoma.Stardust.API.Mapping.MapDataUploader.UpdateMap(System.String)">
             <summary>
             Updates the map with latest pictures
             </summary>
+            <param name="emailToNotify">Email to notify when map is ready</param>
         </member>
         <member name="M:com.Neogoma.Stardust.API.Mapping.MapDataUploader.RequestFailed(System.String,System.String)">
             <inheritdoc/>
@@ -851,6 +816,11 @@
         <member name="P:com.Neogoma.Stardust.API.StardustSDK.VersionCorrect">
             <summary>
             True if the version is correct according to server, false otherwise
+            </summary>
+        </member>
+        <member name="P:com.Neogoma.Stardust.API.StardustSDK.ApiToken">
+            <summary>
+            Returns the currently used API token
             </summary>
         </member>
         <member name="M:com.Neogoma.Stardust.API.StardustSDK.Awake">
