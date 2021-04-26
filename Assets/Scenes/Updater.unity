@@ -3806,7 +3806,7 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: com.Neogoma.Stardust.API.Mapping.MapDataUploader,
           Stardust
         m_MethodName: UpdateMap
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
