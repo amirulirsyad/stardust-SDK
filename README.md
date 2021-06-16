@@ -1,7 +1,7 @@
 ## About
 This [repo](https://github.com/Neogoma/stardust-SDK) is an example on how to use the Stardust SDK for Mapping/Relocation.
 
-Feel free to use it as a template for your own projects, documentation is available [here](https://github.com/Neogoma/stardust-SDK-doc/).
+Feel free to use it as a template for your own projects, documentation is available [here](https://neogoma.github.io/stardust-SDK-doc/).
 
 A video showing the SDK capabilities is available on [our youtube channel](https://www.youtube.com/watch?v=RCIwYGtyXI4).
 
