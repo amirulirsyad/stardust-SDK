@@ -1241,6 +1241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pictureTakenText: {fileID: 1848585357}
+  dataUploadProgress: {fileID: 4471774012599973104}
   mapName: {fileID: 2139576469}
   pictureSentText: {fileID: 1037379124}
   dataLimitReached: {fileID: 1859150955}
@@ -4395,6 +4396,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4471774012599973102}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4471774012599973104 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5189676509334529672, guid: 3af67dad8a6b0bc41873b88c56011079,
+    type: 3}
+  m_PrefabInstance: {fileID: 4471774012599973102}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8114185721933961163
 PrefabInstance:
   m_ObjectHideFlags: 0

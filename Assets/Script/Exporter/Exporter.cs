@@ -1,6 +1,7 @@
 using com.Neogoma.Stardust.API;
 using com.Neogoma.Stardust.API.Mapping;
 using com.Neogoma.Stardust.Datamodel;
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -16,6 +17,11 @@ namespace Neogoma.Stardust.Demo.Mapper
         /// Text element to show how many pictures were taken
         /// </summary>
         public Text pictureTakenText;
+
+        /// <summary>
+        /// Data upload progress
+        /// </summary>
+        public Image dataUploadProgress;
 
         /// <summary>
         /// User input for hte session name
@@ -65,9 +71,15 @@ namespace Neogoma.Stardust.Demo.Mapper
 
             dataUploader = MapDataUploader.Instance;
             
-            dataUploader.onDataCapturedSucessfully.AddListener(OnDataCaptured);
+            dataUploader.onQueueUpdated.AddListener(OnDataCaptured);
             dataUploader.onDataSentSucessfully.AddListener(OnDataSentSuccess);
             dataUploader.onDatalimitReached.AddListener(OnDataLimitReached);
+            dataUploader.onRequestProgress.AddListener(OnRequestProgres);
+        }
+
+        private void OnRequestProgres(float arg0)
+        {
+            dataUploadProgress.fillAmount=arg0;
         }
 
         public void CreateSession()
@@ -90,6 +102,11 @@ namespace Neogoma.Stardust.Demo.Mapper
         private void OnDataCaptured(int datacount)
         {
             pictureTakenText.text = datacount.ToString();
+
+            if (datacount == 0)
+            {
+                dataUploadProgress.fillAmount = 0;
+            }
         }
 
         private void OnDataSentSuccess(int uploadCount)

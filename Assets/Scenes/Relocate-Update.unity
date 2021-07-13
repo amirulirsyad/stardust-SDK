@@ -5047,6 +5047,7 @@ MonoBehaviour:
   mapPicturesCount: {fileID: 2038461767}
   pictureTakenCount: {fileID: 2038461766}
   objectList: {fileID: 239065152}
+  dataUploadProgress: {fileID: 2038461768}
   positionFound:
     m_PersistentCalls:
       m_Calls:
@@ -7063,6 +7064,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2038461768 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5189676509334529672, guid: 3af67dad8a6b0bc41873b88c56011079,
+    type: 3}
+  m_PrefabInstance: {fileID: 2038461764}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2129213049

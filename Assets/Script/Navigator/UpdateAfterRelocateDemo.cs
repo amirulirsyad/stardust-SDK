@@ -2,6 +2,7 @@
 using com.Neogoma.Stardust.API.Relocation;
 using com.Neogoma.Stardust.Datamodel;
 using Neogoma.Stardust.Demo.Mapper;
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -29,6 +30,8 @@ namespace Neogoma.Stardust.Demo.Navigator
         /// </summary>
         public Dropdown objectList;
 
+        public Image dataUploadProgress;
+
         public UnityEvent positionFound = new UnityEvent();
         
         private int pictureTaken=0;
@@ -44,11 +47,18 @@ namespace Neogoma.Stardust.Demo.Navigator
 
             //Setup listeners for data upload
             MapDataUploader.Instance.onDataSentSucessfully.AddListener(PictureUploadSucceed);
-            MapDataUploader.Instance.onDataCapturedSucessfully.AddListener(PictureTaken);
+            MapDataUploader.Instance.onQueueUpdated.AddListener(PictureTaken);
+
+            MapDataUploader.Instance.onRequestProgress.AddListener(RequestProgress);
 
             objectManager = GetComponent<ObjectManager>();
         }
 
+        private void RequestProgress(float arg0)
+        {
+            dataUploadProgress.fillAmount = arg0;
+            
+        }
 
         private void PositionFound(RelocationResults positionMatched,CoordinateSystem newCoords)
         {
@@ -70,7 +80,6 @@ namespace Neogoma.Stardust.Demo.Navigator
         private void InitializeSessionData(Session session)
         {
             mapPicturesCount.text = session.PicturesNumber.ToString();
-            pictureTakenCount.text = session.PicturesNumber.ToString();
 
         }
 
@@ -81,8 +90,10 @@ namespace Neogoma.Stardust.Demo.Navigator
 
         private void PictureTaken(int count)
         {
-            pictureTaken = count;
-            pictureTakenCount.text = count.ToString();
+            if (count == 0)
+            {
+                dataUploadProgress.fillAmount = 0;
+            }
         }
             
     }
