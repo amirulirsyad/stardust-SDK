@@ -188,6 +188,11 @@
             Instance of <see cref="T:com.Neogoma.Stardust.API.Mapping.MapDataUploader"/>
             </summary>
         </member>
+        <member name="F:com.Neogoma.Stardust.API.Mapping.MapDataUploader.useSmoothingFilter">
+            <summary>
+            Check if you want to use a smoothing filter
+            </summary>
+        </member>
         <member name="P:com.Neogoma.Stardust.API.Mapping.MapDataUploader.CurrentUploadProgres">
             <summary>
             Return the current upload progress
@@ -236,6 +241,11 @@
         <member name="F:com.Neogoma.Stardust.API.Mapping.MapDataUploader.onMovingTooFast">
             <summary>
             Event triggered when user moved too fast
+            </summary>
+        </member>
+        <member name="F:com.Neogoma.Stardust.API.Mapping.MapDataUploader.onEmergencyCut">
+            <summary>
+            Event triggered in case of emergency cut
             </summary>
         </member>
         <member name="F:com.Neogoma.Stardust.API.Mapping.MapDataUploader.onRequestProgress">
@@ -310,6 +320,11 @@
         </member>
         <member name="M:com.Neogoma.Stardust.API.Mapping.MapDataUploader.RequestProgress(System.Single,System.String)">
             <inheritdoc/>
+        </member>
+        <member name="M:com.Neogoma.Stardust.API.Mapping.MapDataUploader.OnDestroy">
+            <summary>
+            <inheritdoc/>
+            </summary>
         </member>
         <member name="T:com.Neogoma.Stardust.API.Mapping.EventWithCount">
             <summary>
@@ -685,6 +700,11 @@
             Event triggered when the position request failed
             </summary>
         </member>
+        <member name="F:com.Neogoma.Stardust.API.Relocation.MapRelocationManager.onPositionRequestTimeout">
+            <summary>
+            Event triggered when the position request timed out
+            </summary>
+        </member>
         <member name="F:com.Neogoma.Stardust.API.Relocation.MapRelocationManager.onMapDownloadedSucessfully">
             <summary>
             Event triggered when the map has been sucessfully downloaded and loaded into scene
@@ -729,6 +749,12 @@
             <summary>
             Requests to locate the current position
             </summary>
+        </member>
+        <member name="M:com.Neogoma.Stardust.API.Relocation.MapRelocationManager.SetTimeout(System.Single)">
+            <summary>
+            Sets the manual timeout for requests
+            </summary>
+            <param name="timeout">Time out for the request</param>
         </member>
         <member name="M:com.Neogoma.Stardust.API.Relocation.MapRelocationManager.HandleEvent(com.Neogoma.HoboDream.IInteractionEvent)">
             <inheritdoc/>
