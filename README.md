@@ -14,8 +14,6 @@ The SDK requires you to have a **valid Stardust** account. You can apply for a d
 ## Dependencies
 The SDK is using the [Hobodream framework SDK](https://github.com/Neogoma/hobodream).
 
-This documentation has been generated with [docsify](https://docsify.js.org).
-
 ## Issues
 In case of problems, please submit a [new issue](https://github.com/Neogoma/stardust/issues) after checking that your issue was not already reported.
 Issues not following template will not be prioritized compared to templates issue.
