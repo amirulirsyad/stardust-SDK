@@ -1,6 +1,7 @@
 using com.Neogoma.Stardust.API.Persistence;
 using com.Neogoma.Stardust.API.Relocation;
 using com.Neogoma.Stardust.Datamodel;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -106,8 +107,7 @@ namespace Neogoma.Stardust.Demo.Mapper
 
             Vector3 position = cam.position + cam.forward*forwardCamera;
             Quaternion rot = Quaternion.Euler(0,cam.rotation.eulerAngles.y,0);
-
-            objectController.CreateAndSaveObject(position, rot, Vector3.one, currentSession, selectedBundle, currentParent, ObjectController.CreationSpace.World);
+            objectController.CreateViewAndSaveModel(position, rot, Vector3.one,null, currentSession, selectedBundle, currentParent, ObjectController.CreationSpace.World);            
         }
 
         private void MapDownloadedSucessfully(Session session,GameObject map)
