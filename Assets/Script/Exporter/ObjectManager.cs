@@ -43,7 +43,7 @@ namespace Neogoma.Stardust.Demo.Mapper
 
         private Dictionary<int, Bundle> objectDictionary = new Dictionary<int, Bundle>();
         private Transform cam;
-        private Transform currentParent;
+        private Transform currentParent;        
 
         // Start is called before the first frame update
         void Start()
@@ -107,7 +107,8 @@ namespace Neogoma.Stardust.Demo.Mapper
 
             Vector3 position = cam.position + cam.forward*forwardCamera;
             Quaternion rot = Quaternion.Euler(0,cam.rotation.eulerAngles.y,0);
-            objectController.CreateViewAndSaveModel(position, rot, Vector3.one,null, currentSession, selectedBundle, currentParent, ObjectController.CreationSpace.World);            
+            objectController.CreateViewAndSaveModel(position, rot, Vector3.one, Guid.NewGuid().ToString(), currentSession, selectedBundle, currentParent, ObjectController.CreationSpace.World);           
+            
         }
 
         private void MapDownloadedSucessfully(Session session,GameObject map)
