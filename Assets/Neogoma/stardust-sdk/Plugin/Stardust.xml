@@ -141,6 +141,11 @@
             Triggered when a frame has been captured
             </summary>
         </member>
+        <member name="F:com.Neogoma.Stardust.API.Mapping.OfflineMapper.onSessionCreated">
+            <summary>
+            Triggered when a session has been created
+            </summary>
+        </member>
         <member name="P:com.Neogoma.Stardust.API.Mapping.OfflineMapper.PicturesTaken">
             <summary>
             Current number of pictures taken
@@ -170,6 +175,12 @@
             Will start uploading the map data from device to cloud
             </summary>
             <param name="mapName">Name of the map stored on device</param>
+        </member>
+        <member name="M:com.Neogoma.Stardust.API.Mapping.OfflineMapper.GetOfflineMapFolder">
+            <summary>
+            Returns the folder
+            </summary>
+            <returns></returns>
         </member>
         <member name="M:com.Neogoma.Stardust.API.Mapping.OfflineMapper.GetOfflineMapsOnDevice">
             <summary>
