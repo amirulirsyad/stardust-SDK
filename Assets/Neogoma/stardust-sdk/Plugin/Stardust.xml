@@ -116,9 +116,14 @@
             Triggered to show the global data upload progress
             </summary>
         </member>
-        <member name="F:com.Neogoma.Stardust.API.Mapping.OfflineMapper.onCurrentPackageUploadEvent">
+        <member name="F:com.Neogoma.Stardust.API.Mapping.OfflineMapper.onCurrentPackageUploadProgressEvent">
             <summary>
             Triggered to show the current package upload progress
+            </summary>
+        </member>
+        <member name="F:com.Neogoma.Stardust.API.Mapping.OfflineMapper.onCurrentPackageUploadFinishedEvent">
+            <summary>
+            Triggered when the current package upload is done (returns the number of data sucessfully uploaded)
             </summary>
         </member>
         <member name="F:com.Neogoma.Stardust.API.Mapping.OfflineMapper.onDataLimitReached">
@@ -144,6 +149,16 @@
         <member name="F:com.Neogoma.Stardust.API.Mapping.OfflineMapper.onSessionCreated">
             <summary>
             Triggered when a session has been created
+            </summary>
+        </member>
+        <member name="F:com.Neogoma.Stardust.API.Mapping.OfflineMapper.onBatchCreated">
+            <summary>
+            Triggered when a batch has been created
+            </summary>
+        </member>
+        <member name="F:com.Neogoma.Stardust.API.Mapping.OfflineMapper.onMapUpdateFail">
+            <summary>
+            Triggered when a map can't be updated (usually because the map doesn't exist anymore on server)
             </summary>
         </member>
         <member name="P:com.Neogoma.Stardust.API.Mapping.OfflineMapper.PicturesTaken">
@@ -176,9 +191,21 @@
             </summary>
             <param name="mapName">Name of the map stored on device</param>
         </member>
+        <member name="M:com.Neogoma.Stardust.API.Mapping.OfflineMapper.UploadMapUpdate(com.Neogoma.Stardust.Datamodel.Session)">
+            <summary>
+            Will start uploading the map data from device to cloud
+            </summary>
+            <param name="session">Session object representing the update stored on device</param>
+        </member>
         <member name="M:com.Neogoma.Stardust.API.Mapping.OfflineMapper.GetOfflineMapFolder">
             <summary>
-            Returns the folder
+            Returns the offline map folder
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.Neogoma.Stardust.API.Mapping.OfflineMapper.GetOfflineUpdatesFolder">
+            <summary>
+            Returns the offline updates folder
             </summary>
             <returns></returns>
         </member>
@@ -188,11 +215,23 @@
             </summary>
             <returns>Names of the maps</returns>
         </member>
+        <member name="M:com.Neogoma.Stardust.API.Mapping.OfflineMapper.GetOfflineUpdatesOnDevice">
+            <summary>
+            Returns the list of all stored updates on device
+            </summary>
+            <returns>Names of the maps</returns>
+        </member>
         <member name="M:com.Neogoma.Stardust.API.Mapping.OfflineMapper.StartNewMap(System.String)">
             <summary>
             Creates a new map on device
             </summary>
             <param name="name">Name of the map</param>
+        </member>
+        <member name="M:com.Neogoma.Stardust.API.Mapping.OfflineMapper.StartMapUpdate(com.Neogoma.Stardust.Datamodel.Session)">
+            <summary>
+            Sets up the update folders and files. If a file already exists then new data will be added to it.
+            </summary>
+            <param name="sessionData"></param>
         </member>
         <member name="M:com.Neogoma.Stardust.API.Mapping.OfflineMapper.AddNavigationTarget(UnityEngine.Vector3,System.String)">
             <summary>
@@ -207,9 +246,15 @@
             </summary>
             <param name="name"></param>
         </member>
-        <member name="M:com.Neogoma.Stardust.API.Mapping.OfflineMapper.DeleteAllLocalMaps">
+        <member name="M:com.Neogoma.Stardust.API.Mapping.OfflineMapper.DeleteLocalUpdate(System.String)">
             <summary>
-            Delete all map stored locally
+            Deletes a local update
+            </summary>
+            <param name="uuid"></param>
+        </member>
+        <member name="M:com.Neogoma.Stardust.API.Mapping.OfflineMapper.DeleteAllLocalDatas">
+            <summary>
+            Delete all datas stored locally
             </summary>
         </member>
         <member name="T:com.Neogoma.Stardust.API.Mapping.MapDataUploader">
